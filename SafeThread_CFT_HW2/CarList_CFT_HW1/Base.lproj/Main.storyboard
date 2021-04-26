@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Car View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="addCar" id="BYZ-38-t0r" customClass="AddCarViewController" customModule="CarList_CFT_HW1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ojb-rW-QoZ">
+                                <rect key="frame" x="0.0" y="511" width="414" height="216"/>
+                            </pickerView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Модель:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uE1-dR-hxx">
+                                <rect key="frame" x="66" y="235" width="282" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Год выпуска:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CKb-kJ-FkW">
+                                <rect key="frame" x="66" y="321" width="283" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Гос номер:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lgx-69-Ncs">
+                                <rect key="frame" x="66" y="401" width="283" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Производитель:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ICs-PB-Tkg">
+                                <rect key="frame" x="66" y="167" width="283" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYB-Em-Lab">
+                                <rect key="frame" x="66" y="751" width="283" height="70"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <state key="normal" title="Добавить автомобиль"/>
+                                <connections>
+                                    <action selector="saveButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nB5-zw-mDO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lgx-69-Ncs" secondAttribute="trailing" constant="65" id="1sp-ps-h7D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zYB-Em-Lab" secondAttribute="trailing" constant="65" id="48n-rA-RaG"/>
+                            <constraint firstItem="ICs-PB-Tkg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="123" id="7sN-6P-deP"/>
+                            <constraint firstItem="CKb-kJ-FkW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="8BC-S6-0kD"/>
+                            <constraint firstItem="ojb-rW-QoZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8sg-aM-95W"/>
+                            <constraint firstItem="ICs-PB-Tkg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="9Ib-vl-cgx"/>
+                            <constraint firstItem="lgx-69-Ncs" firstAttribute="top" secondItem="CKb-kJ-FkW" secondAttribute="bottom" constant="46" id="9q0-av-8NW"/>
+                            <constraint firstItem="zYB-Em-Lab" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="BIa-O1-HUI"/>
+                            <constraint firstItem="ojb-rW-QoZ" firstAttribute="top" secondItem="lgx-69-Ncs" secondAttribute="bottom" constant="76" id="H19-kS-5iZ"/>
+                            <constraint firstItem="lgx-69-Ncs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="Hrg-QN-XOA"/>
+                            <constraint firstItem="uE1-dR-hxx" firstAttribute="top" secondItem="ICs-PB-Tkg" secondAttribute="bottom" constant="34" id="Jx4-yq-vPu"/>
+                            <constraint firstItem="ojb-rW-QoZ" firstAttribute="top" secondItem="lgx-69-Ncs" secondAttribute="bottom" constant="76" id="MP1-7Z-0Wm"/>
+                            <constraint firstItem="lgx-69-Ncs" firstAttribute="top" secondItem="CKb-kJ-FkW" secondAttribute="bottom" constant="46" id="Njj-pe-OkD"/>
+                            <constraint firstItem="ojb-rW-QoZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QeZ-Qr-A8C"/>
+                            <constraint firstItem="uE1-dR-hxx" firstAttribute="top" secondItem="ICs-PB-Tkg" secondAttribute="bottom" constant="34" id="c0E-qI-yb2"/>
+                            <constraint firstItem="CKb-kJ-FkW" firstAttribute="top" secondItem="uE1-dR-hxx" secondAttribute="bottom" constant="52" id="des-t7-coZ"/>
+                            <constraint firstItem="uE1-dR-hxx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="gMW-93-aGv"/>
+                            <constraint firstItem="ICs-PB-Tkg" firstAttribute="trailing" secondItem="CKb-kJ-FkW" secondAttribute="trailing" id="gdy-vh-fj7"/>
+                            <constraint firstItem="CKb-kJ-FkW" firstAttribute="top" secondItem="uE1-dR-hxx" secondAttribute="bottom" constant="52" id="hyU-es-HZD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ICs-PB-Tkg" secondAttribute="trailing" constant="65" id="lVM-qu-eJN"/>
+                            <constraint firstItem="zYB-Em-Lab" firstAttribute="top" secondItem="ojb-rW-QoZ" secondAttribute="bottom" constant="24" id="mPz-bw-OmF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CKb-kJ-FkW" secondAttribute="trailing" constant="65" id="rBS-ox-9SD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zYB-Em-Lab" secondAttribute="bottom" constant="41" id="uYI-ew-0SL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uE1-dR-hxx" secondAttribute="trailing" constant="66" id="va2-tP-X8e"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bodyPicker" destination="ojb-rW-QoZ" id="cT4-ic-COh"/>
+                        <outlet property="carNumberTextField" destination="lgx-69-Ncs" id="m7P-DW-kry"/>
+                        <outlet property="manufactureTextField" destination="ICs-PB-Tkg" id="rwb-YQ-cMK"/>
+                        <outlet property="modelTextFIeld" destination="uE1-dR-hxx" id="lqD-QV-erh"/>
+                        <outlet property="saveButton" destination="zYB-Em-Lab" id="ERd-0M-LxT"/>
+                        <outlet property="yearOfProduceTextFIeld" destination="CKb-kJ-FkW" id="tgf-sp-bnq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
