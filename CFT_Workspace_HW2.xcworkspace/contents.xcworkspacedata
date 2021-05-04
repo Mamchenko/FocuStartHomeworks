@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:/Users/anatoliymamchenko/Desktop/CFT_HW3 2/homework-3.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/anatoliymamchenko/Downloads/FocuStartHomeworks-Develop/SafeThread_CFT_HW2/homework-2 /homework-2.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/anatoliymamchenko/Downloads/FocuStartHomeworks-Develop/SafeThread_CFT_HW2/homework-1/homework-1.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
