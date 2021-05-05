@@ -5,10 +5,10 @@
       location = "group:/Users/anatoliymamchenko/Desktop/CFT_HW3 2/homework-3.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/Users/anatoliymamchenko/Downloads/FocuStartHomeworks-Develop/SafeThread_CFT_HW2/homework-2 /homework-2.xcodeproj">
+      location = "group:homework-2 /homework-2.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/Users/anatoliymamchenko/Downloads/FocuStartHomeworks-Develop/SafeThread_CFT_HW2/homework-1/homework-1.xcodeproj">
+      location = "group:homework-1/homework-1.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
